@@ -1,7 +1,7 @@
-import { Box } from 'grommet';
+import { Header } from 'grommet';
 
 const AppBar = (props) => (
-  <Box
+  <Header
     tag='header'
     direction='row'
     align='center'
@@ -11,6 +11,7 @@ const AppBar = (props) => (
     elevation='medium'
     style={{ zIndex: '1' }}
     {...props}
+    sticky="scrollup"
   />
 );
 
