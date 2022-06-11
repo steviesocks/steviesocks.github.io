@@ -32,6 +32,8 @@ function App() {
                             frontend app and subsequently took on additional responsibilities in building out the API and database
                             and maintaining the deployment infrastructure.
                         </Box>
+                        <Box border="top" height="0px" margin={{ vertical: "medium" }} />
+
                         <Box flex pad="medium">
                             <Bluebird />
                             <Box border="top" height="0px" margin={{ vertical: "medium" }} />

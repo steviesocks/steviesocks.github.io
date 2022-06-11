@@ -35,7 +35,7 @@ const theme = {
         pair: {
             column: {
                 gap: {
-                    column: "large",
+                    column: "small",
                     row: "small",
                 },
             },
