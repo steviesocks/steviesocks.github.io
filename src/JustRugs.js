@@ -1,6 +1,7 @@
 import { Anchor, Box, Button, Collapsible, Heading, NameValueList, NameValuePair, Paragraph, ResponsiveContext } from "grommet";
 import { FormDown, FormUp } from "grommet-icons";
 import { useState } from "react";
+import ListItem from "./ListItem";
 
 const techStack = {
     frontend: "React",
@@ -37,13 +38,11 @@ const JustRugs = ({ size }) => {
                         </Paragraph>
                         <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} />
                         <Collapsible open={open}>
-                            <NameValueList layout="grid" pad="small" pairProps={{ direction: "column" }}>
+                            <Box pad="small">
                                 {Object.entries(techStack).map(([name, value]) => (
-                                    <NameValuePair key={name} name={name}>
-                                        {value}
-                                    </NameValuePair>
+                                    <ListItem key={name} name={name} value={value} />
                                 ))}
-                            </NameValueList>
+                            </Box>
                         </Collapsible>
                     </Box>
                     <Box flex margin={{ top: "medium" }}>

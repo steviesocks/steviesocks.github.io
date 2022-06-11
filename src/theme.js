@@ -23,24 +23,6 @@ const theme = {
             height: "20px",
         },
     },
-    nameValuePair: {
-        name: {
-            size: "small",
-        },
-        value: {
-            size: "16px",
-        },
-    },
-    nameValueList: {
-        pair: {
-            column: {
-                gap: {
-                    column: "small",
-                    row: "small",
-                },
-            },
-        },
-    },
 };
 
 export default theme;
