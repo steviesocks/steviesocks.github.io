@@ -1,15 +1,15 @@
-import { Anchor, Box, Button, Collapsible, Heading, Paragraph, ResponsiveContext } from "grommet";
+import { Box, Button, Collapsible, Heading, Paragraph, ResponsiveContext } from "grommet";
 import { FormDown, FormUp } from "grommet-icons";
 import { useState } from "react";
 import ListItem from "./ListItem";
 
 const techStack = {
-    frontend: "React",
-    backend: "NodeJS, PostgreSQL",
-    apis: "web3.js - Ethereum Javascript API, Metamask, WalletConnect, Infura",
+    frontend: "React, Redux, Material UI",
+    backend: "Firebase (cloud functions and user auth), Firestore (NoSQL database)",
+    apis: "Stripe, Kaltura",
 };
 
-const JustRugs = ({ size }) => {
+const Kontomo = ({ size }) => {
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
@@ -22,19 +22,17 @@ const JustRugs = ({ size }) => {
                     <Box flex margin={{ right: "medium" }}>
                         <Box direction="row" align="center" justify="space-between">
                             <Heading level="4" margin={{ vertical: "small", right: "medium" }}>
-                                Just Rugs
+                                Kontomo
                             </Heading>
-                            <Anchor href="https://justrugs.xyz" target="_blank">
-                                justrugs.xyz
-                            </Anchor>
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
-                            Full-stack NFT project. Added functionality to an existing static website and built out complete
-                            backend.
+                            A virtual performance venue. Empowering artists to control and monetize online performances, both live
+                            and recorded.
                         </Paragraph>
                         <Paragraph size="medium">
-                            Integrated APIs to connect client to multiple digital wallet services. Built NodeJS server and
-                            PostgreSQL database with public endpoints to serve resources to NFT marketplaces.
+                            Built out new features for MVP React app with a "serverless" backend. Added support for
+                            livestream video, built a donations feature, and refactored existing features to improve performance
+                            and reliability.
                         </Paragraph>
                         <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} />
                         <Collapsible open={open}>
@@ -49,7 +47,7 @@ const JustRugs = ({ size }) => {
                         <div style={{ position: "relative", paddingBottom: "55.21472392638037%", height: 0 }}>
                             <iframe
                                 title="Bluebird Demo"
-                                src="https://www.loom.com/embed/9815d4434b3846c295f8cd9755338188?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                src="https://www.loom.com/embed/30324f3c28614eebbc44e96bc7465e0a?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
                                 frameborder="0"
                                 allowfullscreen="true"
                                 webkitallowfullscreen="true"
@@ -72,4 +70,4 @@ const JustRugs = ({ size }) => {
     );
 };
 
-export default JustRugs;
+export default Kontomo;

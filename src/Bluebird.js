@@ -1,4 +1,4 @@
-import { Anchor, Box, Button, Collapsible, Heading, NameValueList, NameValuePair, Paragraph, ResponsiveContext } from "grommet";
+import { Anchor, Box, Button, Collapsible, Heading, Paragraph, ResponsiveContext } from "grommet";
 import { FormDown, FormUp } from "grommet-icons";
 import { useState } from "react";
 import ListItem from "./ListItem";

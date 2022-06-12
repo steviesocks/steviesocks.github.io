@@ -3,6 +3,7 @@ import { Github, Linkedin } from "grommet-icons";
 import AppBar from "./AppBar";
 import Bluebird from "./Bluebird";
 import JustRugs from "./JustRugs";
+import Kontomo from "./Kontomo";
 import theme from "./theme";
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
                             <Bluebird />
                             <Box border="top" height="0px" margin={{ vertical: "medium" }} />
                             <JustRugs />
+                            <Box border="top" height="0px" margin={{ vertical: "medium" }} />
+                            <Kontomo />
+
                         </Box>
                     </Box>
                 </Box>
