@@ -1,4 +1,4 @@
-import { Box, Button, Collapsible, Heading, Paragraph, ResponsiveContext } from "grommet";
+import { Anchor, Box, Button, Collapsible, Heading, Paragraph, ResponsiveContext } from "grommet";
 import { FormDown, FormUp } from "grommet-icons";
 import { useState } from "react";
 import ListItem from "./ListItem";
@@ -24,6 +24,9 @@ const Kontomo = ({ size }) => {
                             <Heading level="4" margin={{ vertical: "small", right: "medium" }}>
                                 Kontomo
                             </Heading>
+                            <Anchor href="https://stage.kontomo.com/ASVvszd_Welcome-to-Kontomo" target="_blank">
+                            kontomo.com
+                        </Anchor>
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
                             A virtual performance venue. Empowering artists to control and monetize online performances, both live
