@@ -24,9 +24,9 @@ const JustRugs = ({ size }) => {
                             <Heading level="4" margin={{ vertical: "small", right: "medium" }}>
                                 Just Rugs
                             </Heading>
-                            <Anchor href="https://justrugs.xyz" target="_blank">
+                            {/* <Anchor href="https://justrugs.xyz" target="_blank">
                                 justrugs.xyz
-                            </Anchor>
+                            </Anchor> */}
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
                             Full-stack NFT project. Added functionality to an existing static website and built out complete
@@ -36,9 +36,9 @@ const JustRugs = ({ size }) => {
                             Integrated APIs to connect client to multiple digital wallet services. Built NodeJS server and
                             PostgreSQL database with public endpoints to serve resources to NFT marketplaces.
                         </Paragraph>
-                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} />
+                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }}/>
                         <Collapsible open={open}>
-                            <Box pad="small">
+                            <Box pad="small" style={{ maxWidth: "432px" }}>
                                 {Object.entries(techStack).map(([name, value]) => (
                                     <ListItem key={name} name={name} value={value} />
                                 ))}

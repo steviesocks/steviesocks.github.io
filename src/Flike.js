@@ -4,13 +4,13 @@ import { useState } from "react";
 import ListItem from "./ListItem";
 
 const techStack = {
-  frontend: "React, Redux, Typescript, Material UI",
-  backend: "Python, Flask, PostgreSQL",
-  apis: "Zoom, Amplitude, Google Cloud, Google Speech-To-Text, Salesforce, Slack",
-  "ci/cd": "CircleCI, AWS Elastic Kubernetes, Terraform",
+  frontend: "React, Typescript, TanStack Query, Redux, Tailwinds, NextUI",
+  backend: "Next.js, PostgreSQL, Prisma, Google Cloud Functions",
+  apis: "OpenAI, Gmail, Outreach, Salesloft, Salesforce, Slack",
+  "ci/cd": "GCP, Kubernetes Engine",
 };
 
-const Bluebird = ({ size }) => {
+const Flike = ({ size }) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -23,22 +23,22 @@ const Bluebird = ({ size }) => {
           <Box flex margin={{ right: "medium" }}>
             <Box direction="row" align="center" justify="space-between">
               <Heading level="4" margin={{ vertical: "small", right: "medium" }}>
-                Bluebird
+                Flike
               </Heading>
-              {/* <Anchor href="https://app.getbluebird.ai" target="_blank">
-                app.getbluebird.ai
-              </Anchor> */}
+              <Anchor href="https://www.flike.app/" target="_blank">
+                flike.app
+              </Anchor>
             </Box>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
-              Led frontend development at Bluebird, a venture- and angel-backed early-stage startup founded by
-              Marcus Ratzlaff and Andrew Chou, both early employees at Amplitude.
+              Led frontend development including a React web app and Chrome extension. Contributed significantly to the Next.js/Postgres
+              backend and maintained app deployment through Google Cloud Platform.
             </Paragraph>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
-              Conversation intelligence with an eye toward streamlining onboarding and continuous coaching for sales teams.
+              Leveraging a variety of data collection integrations and the OpenAI api to generate personalized and relevant
+              messages in the user's voice.
             </Paragraph>
             <Paragraph size="medium">
-              Fully owned building the React frontend app, working on all features. On backend, built out additional API
-              endpoints, modified existing endpoints, and built out database to serve new features.
+              Built integrations with Gmail, Outreach, LinkedIn, Salesforce, and Salesloft.
             </Paragraph>
             <Button
               style={{ maxWidth: "432px" }}
@@ -59,7 +59,7 @@ const Bluebird = ({ size }) => {
             <div style={{ position: "relative", paddingBottom: "55.21472392638037%", height: 0 }}>
               <iframe
                 title="Bluebird Demo"
-                src="https://www.loom.com/embed/90e8b30e11de429d90771bf921df6a0c?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                src="https://www.loom.com/embed/f60e3647def0487eb21e1bc4d758ac96?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
                 frameborder="0"
                 allowfullscreen="true"
                 webkitallowfullscreen="true"
@@ -82,4 +82,4 @@ const Bluebird = ({ size }) => {
   );
 };
 
-export default Bluebird;
+export default Flike;

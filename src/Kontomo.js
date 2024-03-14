@@ -24,9 +24,9 @@ const Kontomo = ({ size }) => {
                             <Heading level="4" margin={{ vertical: "small", right: "medium" }}>
                                 Kontomo
                             </Heading>
-                            <Anchor href="https://stage.kontomo.com/ASVvszd_Welcome-to-Kontomo" target="_blank">
+                            {/* <Anchor href="https://stage.kontomo.com/ASVvszd_Welcome-to-Kontomo" target="_blank">
                             kontomo.com
-                        </Anchor>
+                        </Anchor> */}
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
                             A virtual performance venue. Empowering artists to control and monetize online performances, both live
@@ -37,9 +37,9 @@ const Kontomo = ({ size }) => {
                             livestream video, built a donations feature, and refactored existing features to improve performance
                             and reliability.
                         </Paragraph>
-                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} />
+                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }}/>
                         <Collapsible open={open}>
-                            <Box pad="small">
+                            <Box pad="small" style={{ maxWidth: "432px" }}>
                                 {Object.entries(techStack).map(([name, value]) => (
                                     <ListItem key={name} name={name} value={value} />
                                 ))}
