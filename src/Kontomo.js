@@ -29,15 +29,12 @@ const Kontomo = ({ size }) => {
                         </Anchor> */}
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
-                            A virtual performance venue. Empowering artists to control and monetize online performances, both live
-                            and recorded.
+                            Platform for artists to sell tickets to live-streaming and recorded performances, with ticketed showtimes.
                         </Paragraph>
                         <Paragraph size="medium">
-                            Built out new features for MVP React app with a "serverless" backend. Added support for
-                            livestream video, built a donations feature, and refactored existing features to improve performance
-                            and reliability.
+                            Owned full stack development including features for streaming video, payment, messaging and digital ticketing; Firebase backend
                         </Paragraph>
-                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }}/>
+                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }} />
                         <Collapsible open={open}>
                             <Box pad="small" style={{ maxWidth: "432px" }}>
                                 {Object.entries(techStack).map(([name, value]) => (

@@ -11,7 +11,7 @@ const techStack = {
 };
 
 const Flike = ({ size }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -30,8 +30,8 @@ const Flike = ({ size }) => {
               </Anchor>
             </Box>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
-              Led frontend development including a React web app and Chrome extension. Contributed significantly to the Next.js/Postgres
-              backend and maintained app deployment through Google Cloud Platform.
+              Led frontend development including a React web app and Chrome extension. Next.js/Postgres
+              backend, deployment on GCP, tests with Jest.
             </Paragraph>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
               Leveraging a variety of data collection integrations and the OpenAI api to generate personalized and relevant

@@ -11,7 +11,7 @@ const techStack = {
 };
 
 const Bluebird = ({ size }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -30,15 +30,13 @@ const Bluebird = ({ size }) => {
               </Anchor> */}
             </Box>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
-              Led frontend development at Bluebird, a venture- and angel-backed early-stage startup founded by
-              Marcus Ratzlaff and Andrew Chou, both early employees at Amplitude.
+              Led frontend development at Bluebird, a venture- and angel-backed startup founded by early employees at Amplitude.
             </Paragraph>
             <Paragraph size="medium" margin={{ bottom: "none" }}>
               Conversation intelligence with an eye toward streamlining onboarding and continuous coaching for sales teams.
             </Paragraph>
             <Paragraph size="medium">
-              Fully owned building the React frontend app, working on all features. On backend, built out additional API
-              endpoints, modified existing endpoints, and built out database to serve new features.
+              Owned the React frontend app and feature development. Built out Flask/Python API and PostgreSQL database.
             </Paragraph>
             <Button
               style={{ maxWidth: "432px" }}

@@ -29,14 +29,13 @@ const JustRugs = ({ size }) => {
                             </Anchor> */}
                         </Box>
                         <Paragraph size="medium" margin={{ bottom: "none" }}>
-                            Full-stack NFT project. Added functionality to an existing static website and built out complete
-                            backend.
+                            Owned React app with Web3 wallet integrations and NFT minting flow. Node.js API and PostgreSQL database with public endpoints to serve resources to NFT marketplaces
                         </Paragraph>
                         <Paragraph size="medium">
-                            Integrated APIs to connect client to multiple digital wallet services. Built NodeJS server and
+                            Integrated APIs to connect client to multiple digital wallet services. Built Node.js server and
                             PostgreSQL database with public endpoints to serve resources to NFT marketplaces.
                         </Paragraph>
-                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }}/>
+                        <Button icon={open ? <FormUp /> : <FormDown />} label="tech stack" reverse onClick={handleOpen} style={{ maxWidth: "432px" }} />
                         <Collapsible open={open}>
                             <Box pad="small" style={{ maxWidth: "432px" }}>
                                 {Object.entries(techStack).map(([name, value]) => (
