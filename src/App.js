@@ -15,7 +15,15 @@ function App() {
           <AppBar>
             <Heading level={4}>Stephen Stocking</Heading>
 
-            <Box direction="row">
+            <Box direction="row" gap="small" align="center">
+              <Box pad="small">
+                <Anchor href="https://drive.google.com/file/d/1X02UsRvP2P96fg-f4sAVRbqxE65L4MKN/view?usp=drive_link" target="_blank">
+                  <Button color="white" plain={false}>
+                    Resume
+                  </Button>
+                </Anchor>
+              </Box>
+
               <Anchor href="https://www.linkedin.com/in/stephen-stocking/" target="_blank">
                 <Button icon={<Linkedin color="white" />} />
               </Anchor>
